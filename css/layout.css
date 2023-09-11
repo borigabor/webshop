@@ -1,0 +1,38 @@
+
+.layout__item--full-width                 { width: 100%; }
+
+.layout__item--90-percent                 { width: 90%; }
+
+.layout__item--50-percent-w-gutter        { width: calc(100% - 1.071rem); }
+
+.layout__item--75-percent                 { width: 75%; }
+
+.layout__item--25-percent                 { width: 25%; }
+
+.layout__item--content-w--sticked-footer  { min-height: calc(100vh - 80px);}
+
+
+.layout__item--gutter-big { margin-bottom: 2.857rem; }
+
+
+.layout__item--centered-horizontaly {
+    margin-right:  auto;
+    margin-left:   auto;
+}
+
+.layout__item--floated--left {
+    float: left;
+}
+
+.layout__item--floated--right {
+    float: right;
+}
+
+
+
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear:   both;
+}

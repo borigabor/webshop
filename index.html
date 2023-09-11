@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebShop</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+
+    <script src="https://kit.fontawesome.com/c300050d94.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+    <div class="layout">
+
+        <header class="header layout__item--full-width layout__item--gutter-big">
+            <div class="header-wrapper layout__item--90-percent layout__item--centered-horizontaly">
+                <div class="header-content">
+                    <a href="index.html" class="header-logo">
+                        <i class="fas fa-store icon"></i>
+                        <h2 class="header-title">WebShop</h2>
+                    </a>
+
+                </div>
+            </div>
+        </header>
+
+        <div class="sidebar layout__item--25-percent">
+
+
+            <form  class="sidebar__search-bar" id="search-bar">
+                <input type="text" name="search" placeholder="Search" class="sidebar__search">
+                <button type="submit" class="sidebar__search-submit">
+                    <i class="fas fa-search"></i>
+                </button>
+            </form>
+
+            <div class="sidebar__cart">
+                <h6 class="cart__title">
+                    <span class="cart__icon"><i class="fas fa-shopping-cart"></i></span>
+                    Cart
+                </h6>
+                <span id="total-amount" class="cart__text">your cart is empty</span>
+
+                <button id="remove-cart" class="cart__btn btn-primary--hollow btn">Remove Cart</button>
+
+            </div>
+
+            <div class="product-container">
+                <form id="create-product">
+                    <h6 class="create__product-title">Add new product</h6>
+                    <input type="text" name="name" placeholder="Name" class="product-form__input-field">
+                    <input type="number" name="price" placeholder="Price" class="product-form__input-field">
+                    <label class="product-form__checkbox">
+                        Is in stock?
+                    <input type="checkbox" name="isInStock" class="checkbox">
+                    </label>
+                    <button type="submit" class="btn product-form__btn btn-primary--hollow ">Send</button>
+                </form>
+            </div>
+
+
+            <div id ="edit-proudct-container"class="product-container"></div>
+
+<!--
+            <div class="product-container">
+                <form id="update-product">
+                    <h6 class="create__product-title">Update product</h6>
+                    <input type="text" name="name" placeholder="Name" class="product-form__input-field">
+                    <input type="number" name="price" placeholder="Price" class="product-form__input-field">
+                    <label class="product-form__checkbox">
+                        Is in stock?
+                    <input type="checkbox" name="isInStock" class="checkbox">
+                    </label>
+                    <button type="submit" class="btn product-form__btn btn-primary--hollow ">Send</button>
+                </form>
+            </div>
+-->
+
+        </div><!--sidebar-->
+
+        <div  class="product-list-wrapper layout__item--content-w--sticked-footer layout__item--gutter-big layout__item--90-percent layout__item--centered-horizontaly">
+
+            <div id="product-list-components" class="product-components layout__item--gutter-big">
+
+                <!--
+                <div class="product-card">
+                    <div class="product-card-header">
+                        <h6 class="product-name">Robinson Crusoe</h6>
+                    </div>
+                    <div class="product-card-info">
+                        <span class="product-text">in stock</span>
+                        <span class="product-price">9$</span>
+                        <button class="btn btn-secondary add-product">Add to cart</button>
+                        <button class="btn btn-secondary edit-product">update</button>
+                        <button class="btn btn-secondary delete-product">delete</button>
+                    </div>
+                </div>
+
+                -->
+         
+        
+
+            </div><!--product-list-components-->
+
+
+        </div> <!--product-list-wrapper-->
+
+        <footer class="footer layout__item--full-width ">
+            <div class="footer__copyright">
+                <p>© 2023 Copyright
+                    <span class="brand-name">WebShop</span> /  Design by
+                    <span class="student-name">Bori Gábor</span> 
+                    </p>
+            </div>
+        </footer>
+
+    </div><!--layout-->
+
+
+
+    
+    <script src="script.js"></script>
+</body>
+</html>

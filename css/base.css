@@ -1,0 +1,53 @@
+/**
+
+ * BEÁLLÍTÁSOK
+ * Box-sizing...........Az oldalunk globális alapbeállításai.
+ * Base font-size.......Az alap betűméret deklarálása.
+ * Margins..............Top és bottom marginok globális értékei.
+ * Anchor...............A linkek alapértelmezett beállításai.
+ 
+ */
+
+
+* {
+    box-sizing: border-box;
+    padding:    0;
+    margin:     0;
+}
+
+html    { font-size: 14px; }
+
+
+h2, h3, h6,
+p {
+    margin-bottom:  1.071rem;
+}
+
+a {
+    text-decoration:  none;
+    cursor:           pointer;
+}
+
+body {
+    font-family:       'Poppins', sans-serif;
+    background-color:  #F4F3F5;
+    color:             #211138;
+    padding-right:     25rem;
+}
+
+h2 { font-size: 2.857rem; }
+
+h3 { font-size: 2.143rem; }
+
+span {
+    font-size:       0.857rem;
+    letter-spacing:  0.171rem;
+    text-transform:  uppercase;
+    font-weight:     bold;
+}
+
+::placeholder {
+    color:        #211138;
+    opacity:      0.25;
+    font-weight:  bold;
+}
